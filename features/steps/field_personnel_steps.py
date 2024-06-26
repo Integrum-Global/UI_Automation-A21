@@ -124,7 +124,7 @@ def step_impl(context, Name, Contact_Number,Email):
     fieldpersonnel_email.send_keys(Email)
     time.sleep(1)
 
-    fieldpersonnel_skillset =context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_SKILLSET_DROP_DOWN)
+    '''fieldpersonnel_skillset =context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_SKILLSET_DROP_DOWN)
     fieldpersonnel_skillset.click()
     time.sleep(1)
 
@@ -136,13 +136,14 @@ def step_impl(context, Name, Contact_Number,Email):
     time.sleep(1)
 
     fieldpersonnel_zones =context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_ZONE)
-    fieldpersonnel_zones.click()
+    fieldpersonnel_zones.click()'''
+
 
     # start date calendar
     input_field = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_CONTRACT_START_DATE_OPTION)
     input_field.click()
 
-    next_btn = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_NEXT_BTN)
+    next_btn = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_START_NEXT_BTN)
   
     calendar_mm_yyyy = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_CALENDAR_MM_YYYY)
     time.sleep(1)
@@ -161,7 +162,7 @@ def step_impl(context, Name, Contact_Number,Email):
     input_field = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_CONTRACT_END_DATE_OPTION)
     input_field.click()
 
-    next_btn = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_NEXT_BTN)
+    next_btn = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_END_NEXT_BTN)
    
     calendar_mm_yyyy = context.browser.find_element(By.XPATH, xpaths.FIELD_PERSONNEL_CALENDAR_END_MM_YYYY)
     time.sleep(1)
