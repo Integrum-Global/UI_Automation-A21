@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import xpaths
 
-@given('I am on the login page of integrum mobility web application')
+@given('I am on the login page of a21-dev web application')
 def step_impl(context):
     context.browser.get(context.base_url)
     #wait for the login page to load
